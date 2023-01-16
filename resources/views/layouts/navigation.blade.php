@@ -91,7 +91,7 @@
           <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
          <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
+            <a href="{{route('main-dashboard')}}" class="nav-link">
               <i class="nav-icon fas fa-tachometer-alt"></i>
            
                  Dashboard
@@ -109,19 +109,19 @@
             </a>
             <ul class="nav nav-treeview">
               <li class="nav-item">
-                <a href="../../index.html" class="nav-link">
+                <a href="{{ route('users.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Users</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index2.html" class="nav-link">
+                <a href="{{ route('roles.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Roles</p>
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../../index3.html" class="nav-link">
+                <a href="{{ route('permissions.index') }}" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Permissions</p>
                 </a>
@@ -129,36 +129,25 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-            <i class="fas fa-file-signature"></i>
+            <a href="{{ route('tendor.index') }}" class="nav-link">
+            <i class="nav-icon fas fa-briefcase"></i>
               Tendors
             </a>
           </li>
           <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-            <i class="fas fa-clipboard-list"></i>
+            <a href="{{ route('products.index') }}" class="nav-link">
+            <i class=" nav-icon fas fa-clipboard-list"></i>
               Products
             </a>
           </li>
          
           <li class="nav-item">
             <a href="../widgets.html" class="nav-link">
-            <i class="fas fa-money-check-alt"></i>
+            <i class="nav-icon fas fa-truck"></i>
               Suppliers
             </a>
           </li>
-          <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-            <i class="fas fa-comment-alt"></i>
-              Messages
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="../widgets.html" class="nav-link">
-            <i class="fas fa-cogs"></i>
-              Settings
-            </a>
-          </li>
+       
        
        
         </ul>

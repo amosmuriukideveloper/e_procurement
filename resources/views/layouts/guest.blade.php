@@ -9,11 +9,18 @@
 
         <!-- Fonts -->
         <link rel="stylesheet" href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap">
-
-        <!-- Scripts -->
-        @vite(['resources/css/app.css', 'resources/js/app.js'])
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/@mdi/font@6.9.96/css/materialdesignicons.min.css">
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="{{asset('plugins/fontawesome-free/css/all.min.css') }}">
+        <!-- Theme style -->
+        <link rel="stylesheet" href="{{ asset('css/adminlte.min.css') }}">
+                <!-- jQuery -->
+        <script src="{{ asset('plugins/jquery/jquery.min.js') }}"></script>
+        <!-- Bootstrap 4 -->
+        <script src="{{ asset('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
     </head>
-    <body>
+    <body class="hold-transition login-page">
         <div class="font-sans text-gray-900 antialiased">
             {{ $slot }}
         </div>
